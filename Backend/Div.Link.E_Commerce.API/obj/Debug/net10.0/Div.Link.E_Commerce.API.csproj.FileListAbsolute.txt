@@ -1,10 +1,15 @@
-M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.exe
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\appsettings.Development.json
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\appsettings.json
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.staticwebassets.endpoints.json
+M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.exe
+M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.deps.json
+M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.runtimeconfig.json
+M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.dll
+M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.pdb
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Azure.Core.dll
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Azure.Identity.dll
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Humanizer.dll
+M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
@@ -155,10 +160,5 @@ M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\obj\Debug\net10.0\Div.
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\obj\Debug\net10.0\Div.Link.E_Commerce.API.dll
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\obj\Debug\net10.0\refint\Div.Link.E_Commerce.API.dll
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\obj\Debug\net10.0\Div.Link.E_Commerce.API.pdb
-M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.deps.json
-M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.runtimeconfig.json
-M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.dll
-M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\bin\Debug\net10.0\Div.Link.E_Commerce.API.pdb
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\obj\Debug\net10.0\Div.Link.E_Commerce.API.genruntimeconfig.cache
 M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\obj\Debug\net10.0\ref\Div.Link.E_Commerce.API.dll
-M:\E_Commerce\E_Comarce02\Backend\Div.Link.E_Commerce.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

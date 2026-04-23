@@ -1,13 +1,12 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Div.Link.E_Commerce.DAL.Models
 {
-    public class Addresss
+    public class Address : BaseEntity
     {
-        public int Id { get; set; }
         public int Apart_no { get; set; }
         public string ApartName { get; set; }
         public string StreetName { get; set; } 
