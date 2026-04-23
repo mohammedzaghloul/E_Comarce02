@@ -6,7 +6,7 @@ namespace Div.Link.E_Commerce.DAL.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        // Add custom properties here, e.g.
+        
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public virtual Customer? Customer { get; set; }
