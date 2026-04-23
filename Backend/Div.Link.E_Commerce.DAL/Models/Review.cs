@@ -1,4 +1,5 @@
 using Div.Link.E_Commerce.DAL.Helper;
+using Div.Link.E_Commerce.DAL.Models.BaseClass;
 using System;
 using System.Collections.Generic;
 using System.Data;

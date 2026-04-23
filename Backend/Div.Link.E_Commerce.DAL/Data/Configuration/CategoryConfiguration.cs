@@ -18,7 +18,7 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
                 builder.Property(c => c.Description)
                     .HasMaxLength(500);
     
-                builder.HasMany(c => c.ChildCategory)
+                builder.HasMany(c => c.Children)
                     .WithOne(c => c.ParentCategory)
                     .HasForeignKey(c => c.ParentCategoryId)
                     .OnDelete(DeleteBehavior.Restrict);

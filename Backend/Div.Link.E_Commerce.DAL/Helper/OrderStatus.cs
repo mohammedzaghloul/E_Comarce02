@@ -6,10 +6,10 @@ namespace Div.Link.E_Commerce.DAL.Helper
 {
     public enum OrderStatus
     {
-        Pending,
-        Processing,
-        Shipped,
-        Delivered,
-        Cancelled
+        Pending=1,
+        Processing=2,
+        Shipped=3,
+        Delivered=4,
+        Cancelled=5
     }
 }

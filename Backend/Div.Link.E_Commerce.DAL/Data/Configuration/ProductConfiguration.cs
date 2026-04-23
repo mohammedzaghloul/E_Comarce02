@@ -17,23 +17,26 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
 
             builder.Property(a => a.Id).UseIdentityColumn();
 
-            builder.Property(builder => builder.MRP)
-               .HasColumnType("decimal(18,2)")
+            builder.Property(builder => builder.Price)
+               .HasColumnType($"{SQLDataType.Decimal}(18,2)")
                .IsRequired();
 
             builder.HasOne(p => p.Category)
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId);
 
-            builder.Property(p => p.Seller_Name)
-                .HasColumnType($"{SQLDataType.nvarchar}")
-                .HasMaxLength(100)
-                .IsRequired();
 
+            builder.HasOne(p => p.Brand)
+       .WithMany(b => b.Products)
+       .HasForeignKey(p => p.BrandId)
+       .OnDelete(DeleteBehavior.Restrict);
 
-            builder.Property(p => p.Brand)
-                .HasMaxLength(50)
-                .IsRequired();
+            builder.Property(p => p.Name)
+                .IsRequired()
+                .HasMaxLength(150);
+
+            builder.Property(p => p.Description)
+                .HasMaxLength(1000);
 
             builder.Property(p => p.Stock)
                 .IsRequired();

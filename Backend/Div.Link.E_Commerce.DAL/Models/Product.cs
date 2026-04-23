@@ -1,3 +1,4 @@
+using Div.Link.E_Commerce.DAL.Models.BaseClass;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,15 +8,19 @@ namespace Div.Link.E_Commerce.DAL.Models
 {
     public class Product : BaseEntity
     {
-        public string Seller_Name { get; set; }
-        public decimal MRP { get; set; }
-        public byte Stock { get; set; }
-        public string Brand { get; set; }
+        public string Name { get; set; } = null!;
+        public string? Description { get; set; }
+
+        public decimal Price { get; set; }
+        public int Stock { get; set; }
         public int CategoryId { get; set; }
-        public Category Category { get; set; } = null!;// creation null for given 
+        public Category Category { get; set; } = null!;
         public int SellerId { get; set; }
-        public ICollection<ProductCart> ProductCarts { get; set; } = new HashSet<ProductCart>();
-        public ICollection<ProductSeller> ProductSellers { get; set; } = new List<ProductSeller>();
+        public Seller Seller { get; set; } = null!;
+        public ICollection<OrderItem> OrderItems { get; set; } = new HashSet<OrderItem>();
+        public ICollection<Review> Reviews { get; set; } = new HashSet<Review>();
+        public int BrandId { get; set; }          // FK
+        public Brand Brand { get; set; } = null!; // Navigation
 
     }
 }

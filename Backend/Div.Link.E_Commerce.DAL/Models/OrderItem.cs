@@ -1,5 +1,7 @@
+using Div.Link.E_Commerce.DAL.Models.BaseClass;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Div.Link.E_Commerce.DAL.Models
@@ -12,8 +14,8 @@ namespace Div.Link.E_Commerce.DAL.Models
         public Product Product { get; set; } = null!;
         public int Quantity { get; set; }
 
-        //Maximum Retail Price
-        public decimal MRP { get; set; }
+        [DataType(DataType.Currency)]
+        public decimal Price { get; set; }
 
     }
 }

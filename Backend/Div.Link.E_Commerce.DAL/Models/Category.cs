@@ -1,3 +1,4 @@
+using Div.Link.E_Commerce.DAL.Models.BaseClass;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,12 +16,13 @@ namespace Div.Link.E_Commerce.DAL.Models
     #endregion
     public class Category : BaseEntity // self referencing table one to many relationship with itself
     {
-        public string Name { get; set; }= null!;// creation null for given
+        public string Name { get; set; }= null!;
         public string? Description { get; set; }
-        public ICollection<Product> Products { get; set; }=new HashSet<Product>(); // one to many relationship with Product
-        public  Category ParentCategory{ get; set; }=null!;// creation null for given
+        public ICollection<Product> Products { get; set; }=new HashSet<Product>();
+        // one to many relationship with Product
+        public  Category ParentCategory{ get; set; }=null!;
         [ForeignKey("ParentCategory")]
         public int? ParentCategoryId { get; set; }
-        public ICollection<Category> ChildCategory { get; set; }=new HashSet<Category>();
+        public ICollection<Category> Children  { get; set; }=new HashSet<Category>();
     }
 }
