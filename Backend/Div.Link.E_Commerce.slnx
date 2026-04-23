@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Div.Link.E_Commerce.API/Div.Link.E_Commerce.API.csproj" />
+  <Project Path="Div.Link.E_Commerce.BLL/Div.Link.E_Commerce.BLL.csproj" Id="7c785a5a-aa7d-43ba-a84f-c19727b904ad" />
+  <Project Path="Div.Link.E_Commerce.DAL/Div.Link.E_Commerce.DAL.csproj" Id="3ba5536b-8ffe-4faa-bcbb-79bffbd511fe" />
+</Solution>

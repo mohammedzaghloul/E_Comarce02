@@ -1,0 +1,6 @@
+@Div.Link.E_Commerce.API_HostAddress = http://localhost:5236
+
+GET {{Div.Link.E_Commerce.API_HostAddress}}/Auth/
+Accept: application/json
+
+###

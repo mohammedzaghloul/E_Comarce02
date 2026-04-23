@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Div.Link.E_Commerce.BLL": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

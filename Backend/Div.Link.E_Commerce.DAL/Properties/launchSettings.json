@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Div.Link.E_Commerce.DAL": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
