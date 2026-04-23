@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Div.Link.E_Commerce.DAL.Models
 {
-    public class Addresss
+    public class Address
     {
         public int Id { get; set; }
         public int Apart_no { get; set; }

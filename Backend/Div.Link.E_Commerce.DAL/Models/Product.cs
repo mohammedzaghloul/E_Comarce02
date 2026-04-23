@@ -15,5 +15,8 @@ namespace Div.Link.E_Commerce.DAL.Models
         public int CategoryId { get; set; }
         public Category Category { get; set; } = null!;// creation null for given 
         public int SellerId { get; set; }
+        public ICollection<ProductCart> ProductCarts { get; set; } = new HashSet<ProductCart>();
+        public ICollection<ProductSeller> ProductSellers { get; set; } = new List<ProductSeller>();
+
     }
 }

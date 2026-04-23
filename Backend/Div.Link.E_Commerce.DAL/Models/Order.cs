@@ -14,6 +14,7 @@ namespace Div.Link.E_Commerce.DAL.Models
         public OrderStatus Order_Satus { get; set; }
         public int CartId { get; set; }
         public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
     } 
 
 }
