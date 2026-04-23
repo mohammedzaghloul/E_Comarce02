@@ -1,4 +1,4 @@
-﻿using Div.Link.E_Commerce.DAL.Models;
+using Div.Link.E_Commerce.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -12,11 +12,14 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
+            //builder.ToView("ProductsView", "dbo");
             // naming  Table
             //builder.ToTable("Products01","dbo");
             builder.Property(builder => builder.MRP)
                 .HasColumnType("decimal(18,2)")
                 .IsRequired();
+            builder.Property(a=>a.Id).UseIdentityColumn();
+            #region MyRegion
 
             builder.Property(p => p.Seller_Name)
                 .HasMaxLength(100)
@@ -30,11 +33,11 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
                 .HasColumnType($"{SQLDataType.nvarchar}")
                 .HasMaxLength(100)
                 .IsRequired();
-               // .HasAnnotation("MaxLength", 100);
+            // .HasAnnotation("MaxLength", 100);
 
             builder.Property(p => p.Brand)
                 .HasMaxLength(50)
-                .IsRequired();  
+                .IsRequired();
 
             builder.Property(p => p.Stock)
                 .IsRequired();
@@ -42,8 +45,9 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
             builder.Property(p => p.CategoryId)
                 .IsRequired();
 
-             builder.Property(p => p.SellerId)
-                .IsRequired();
+            builder.Property(p => p.SellerId)
+               .IsRequired(); 
+            #endregion
             // Id
 
             builder.HasKey(a => a.Id);
@@ -51,6 +55,9 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
             builder.Property(a => a.Id)
             .UseIdentityColumn(10,1);
 
+            builder.HasIndex(p => p.Seller_Name)
+                .HasDatabaseName("IX_Seller_Name")
+                .IsUnique(false);
 
             // builder.Property(e => e.creationdate)
             //    .HasDefaultValue(DateOnly.FromDateTime(DateTime.Now))XXXXX
@@ -60,10 +67,10 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
             //// date only 
 
 
-            builder.HasOne(p=>p.Category)
+            builder.HasOne(p => p.Category)
                 .WithMany(c => c.Products)
-                .HasForeignKey(p => p.CategoryId)
-                .OnDelete(DeleteBehavior.Cascade);// Defult is Cascade, if parent is deleted then child will be deleted, if you want to restrict the delete then use Restrict
+                .HasForeignKey(p => p.CategoryId);
+                //.OnDelete(DeleteBehavior.Cascade);// Defult is Cascade, if parent is deleted then child will be deleted, if you want to restrict the delete then use Restrict
 
 
 

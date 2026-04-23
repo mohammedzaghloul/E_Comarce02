@@ -1075,8 +1075,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "Div.Link.E_Commerce.DAL": "1.0.0",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.23.0"
+          "Div.Link.E_Commerce.DAL": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Div.Link.E_Commerce.BLL.dll": {}
@@ -1090,8 +1089,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.5",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.23.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.5"
         },
         "compile": {
           "bin/placeholder/Div.Link.E_Commerce.DAL.dll": {}
@@ -3292,6 +3290,7 @@
       "Div.Link.E_Commerce.BLL >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.5",
       "Microsoft.EntityFrameworkCore >= 10.0.5",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.5",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.23.0"
     ]
@@ -3356,6 +3355,10 @@
             "version": "[10.0.5, )"
           },
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[10.0.5, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[10.0.5, )"
           },
