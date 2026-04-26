@@ -10,6 +10,7 @@ namespace Div.Link.E_Commerce.DAL.Data.Configuration
         {
             builder.HasKey(c => c.Id);
 
+
             builder.Property(c => c.CustomerId)
                    .IsRequired();
 
