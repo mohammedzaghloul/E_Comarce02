@@ -9,6 +9,7 @@ namespace Div.Link.E_Commerce.DAL.Models
     {
         public string? StoreName { get; set; }
         public string? Description { get; set; }
+
         public string ApplicationUserId { get; set; } = null!;
         public ApplicationUser ApplicationUser { get; set; } = null!;
         public decimal Total_Sales { get; set; }

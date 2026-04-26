@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <UseAppHost>false</UseAppHost>
@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Div.Link.E_Commerce.DAL\Div.Link.E_Commerce.DAL.csproj" />
+    <ProjectReference Include="..\Div.Link.E_Commerce.DAL\Link.Div.E_Commerce.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -11,5 +11,6 @@ namespace Div.Link.E_Commerce.DAL.Models
         public Customer Customer { get; set; } = null!;
 
         public ICollection<CartItem> Items { get; set; } = new HashSet<CartItem>();
+
     }
 }

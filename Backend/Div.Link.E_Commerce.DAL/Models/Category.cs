@@ -17,6 +17,7 @@ namespace Div.Link.E_Commerce.DAL.Models
     public class Category : BaseEntity // self referencing table one to many relationship with itself
     {
         public string Name { get; set; }= null!;
+
         public string? Description { get; set; }
         public ICollection<Product> Products { get; set; }=new HashSet<Product>();
         // one to many relationship with Product

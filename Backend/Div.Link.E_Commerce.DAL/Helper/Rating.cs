@@ -6,10 +6,10 @@ namespace Div.Link.E_Commerce.DAL.Helper
 {
     public enum Rating
     {
-        Terrible,
-        Poor,
-        Average,
-        Good,
-        Excellent
+        Terrible=1,
+        Poor=2,
+        Average=3,
+        Good=4,
+        Excellent=5 
     }
 }
