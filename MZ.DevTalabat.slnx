@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="TextFile1.txt" />
+  </Folder>
+  <Project Path="MZ.Dev.API/MZ.Dev.Talabat.API.csproj" />
+  <Project Path="MZ.Dev.Domain/MZ.Dev.Domain.csproj" />
+  <Project Path="MZ.Dev.Repository/MZ.Dev.Repository.csproj" />
+  <Project Path="MZ.Dev.Services/MZ.Dev.Services.csproj" />
+</Solution>

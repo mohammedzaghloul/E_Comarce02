@@ -1,0 +1,117 @@
+## Ignore Visual Studio temporary files, build results, and user-specific settings.
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono geneated temporary files
+#Omit for now
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Re]leases/
+x64/
+x86/
+build/
+bld/
+[Log]/
+
+# Visual Studio 2015/2017/2019/2022 cache directory
+.vs/
+# Uncomment if needed: OpenCommandLine use
+# _ReSharper*/
+
+# MSTest test Results
+[Test]Result*/
+[Build]Context*/
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Rider
+.idea/
+
+# DotCover
+*.dotCover
+
+# AxoCover
+.axoCover/*
+!.axoCover/settings.json
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Windows Image Helper Files
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycled Bin folders
+$RECYCLE.BIN/
+
+# Fabrikam Fiber
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, since it might be required in some cases
+!**/[Pp]ackages/build/
+# Uncomment if using NuGet Sign Tool
+# !**/[Pp]ackages/tools/
+
+# User secret store
+secrets.json
+
+# Backup and restore templates
+-backup
+
+# Service Fabric
+__FabricSystemRoot*/
+*.sfproj
+
+# Web
+wwwroot/lib/
+node_modules/
+
+# Dotnet CLI
+.dotnet/
+.tools/
+
+# Entity Framework migrations cache
+.ef/
+
+# Rider files
+*.sln.iml
+
+# OS files
+.DS_Store
